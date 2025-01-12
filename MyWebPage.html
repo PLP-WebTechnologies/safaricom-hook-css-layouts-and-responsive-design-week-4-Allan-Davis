@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan Davis | Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        header .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .content .text {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer Styles */
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        footer ul li {
+            list-style: none;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            header, footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .content .text, .content .image {
+                padding: 10px;
+            }
+
+            footer ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            header, footer {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            footer ul {
+                justify-content: center;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            nav ul {
+                display: flex;
+                gap: 20px;
+            }
+
+            .content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+
+        /* Animation for resizing */
+        body {
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-color: #e6e6e6;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            body {
+                background-color: #f4f4f4;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            body {
+                background-color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://twitter.com/davisgeneration" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/allan-davis-9294111ba/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Allan-Davis" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Hi, I’m Allan Davis. I'm a software developer with a passion for creating impactful solutions. You can find my latest projects and work here.</p>
+                <p>Feel free to connect with me through my social media links below. Let’s build something great together!</p>
+            </div>
+            <div class="image">
+                <img src="https://www.linkedin.com/in/allan-davis-9294111ba/overlay/background-image/" alt="Placeholder Image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://twitter.com/davisgeneration" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/allan-davis-9294111ba/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Allan-Davis" target="_blank">GitHub</a></li>
+        </ul>
+        <p>&copy; 2025 Allan Davis. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
